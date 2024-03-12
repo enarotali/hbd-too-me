@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a360bde;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    color: #fde400;
+  }
+
+  header h3 {
+    font-size: 36px;
+    color: #00e8fd;
+  }
+
+  header h4 {
+    font-size: 36px;
+    color: #e61a24;
+  }
+
+  header h5 {
+    font-size: 36px;
+    color: #1ae6a5;
+  }
+  
+  main .photo-frame {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 10px solid #65f70a4d;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(207, 0, 244);
+  }
+  
+  main .photo-frame img {
+    width: 100%;
+    height: auto;
+    animation: rotatePhoto 10s linear infinite;
+  }
+
+  .container {
+    position: relative;
+}
+  
+  @keyframes rotatePhoto {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  audio {
+    margin-top: 20px;
+  }
